@@ -32,6 +32,7 @@ func (p *Project) Tree() []Entry {
 	return p.tree
 }
 
+// TODO: удалить, временный метод для отладки
 func (p *Project) TEntry(index int, sybDir string, sybFile string, projectNamePath bool) (string, error) {
 	if index < 0 || index >= len(p.tree) {
 		return "", ErrIndexOutOfRange
